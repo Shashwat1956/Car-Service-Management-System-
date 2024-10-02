@@ -18,7 +18,7 @@ def register_car():
 def check_details():
     num = int(input("Enter your car number: "))
     car = next((c for c in car_details if c[2] == num), None)
-    
+  
     if car:
         print(f"Hello {car[0]},\nRegistered date: {car[1]}\nCar number: {car[2]}\nModel Number: {car[3]}")
     else:
